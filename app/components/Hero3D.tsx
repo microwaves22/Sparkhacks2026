@@ -46,9 +46,26 @@ function CameraController({ currentZoom }: { currentZoom: number }) {
   return null;
 }
 
+/** White flash overlay, driven by state */
+function Flashbang({ active }: { active: boolean }) {
+  return (
+    <div
+      className="fixed inset-0 z-[60] pointer-events-none"
+      style={{
+        background: "white",
+        opacity: active ? 1 : 0,
+        transition: "opacity 100ms ease-out",
+      }}
+    />
+  );
+}
+
 export default function Hero3D() {
   const [currentZoom, setCurrentZoom] = React.useState(0);
   const [isStarted, setIsStarted] = React.useState(false);
+
+  // flashbang state
+  const [flashOn, setFlashOn] = React.useState(false);
 
   const handleClick = () => {
     if (!isStarted) return;
@@ -63,6 +80,31 @@ export default function Hero3D() {
     setIsStarted(true);
     setCurrentZoom(0);
   };
+
+  // === ZoomFlashbang behavior: when we enter zoom #4, wait 2s, then flash ===
+  React.useEffect(() => {
+    if (!isStarted) return;
+    if (currentZoom !== 4) return;
+
+    const waitMs = 2000;
+
+    const t1 = window.setTimeout(() => {
+      // flash ON
+      setFlashOn(true);
+
+      // flash duration
+      const t2 = window.setTimeout(() => {
+        setFlashOn(false);
+      }, 100);
+
+      // cleanup nested timer if effect re-runs
+      return () => window.clearTimeout(t2);
+    }, waitMs);
+
+    return () => {
+      window.clearTimeout(t1);
+    };
+  }, [isStarted, currentZoom]);
 
   return (
     <div
@@ -82,13 +124,14 @@ export default function Hero3D() {
         <directionalLight position={[4, 6, 4]} intensity={2.5} />
         <Environment preset="studio" />
 
-        <React.Suspense
-          fallback={<Html center className="text-black font-bold">Initializing...</Html>}
-        >
+        <React.Suspense fallback={<Html center className="text-black font-bold">Initializing...</Html>}>
           <CameraGLB />
           <CameraController currentZoom={currentZoom} />
         </React.Suspense>
       </Canvas>
+
+      {/* FLASHBANG OVERLAY (fires when entering zoom 4 after 2s) */}
+      <Flashbang active={flashOn} />
 
       {/* LANDING OVERLAY */}
       {!isStarted && (
@@ -118,16 +161,28 @@ export default function Hero3D() {
           <GearQuestion onSelect={() => setCurrentZoom((prev) => prev + 1)} />
         </div>
       )}
+
       {isStarted && currentZoom === 2 && (
         <div className="absolute inset-0 z-30 pointer-events-auto flex items-center justify-center">
           <LensQuestion onSelect={() => setCurrentZoom((prev) => prev + 1)} />
         </div>
       )}
+
       {isStarted && currentZoom === 3 && (
         <div className="absolute inset-0 z-40 pointer-events-auto flex items-center justify-center">
-          <CareerSphere 
+          <CareerSphere
             onSelect={() => setCurrentZoom((prev) => prev + 1)}
             onClose={() => setCurrentZoom((prev) => prev - 1)}
+          />
+        </div>
+      )}
+
+      {isStarted && currentZoom === 4 && (
+        <div className="fixed inset-0 z-50 bg-black">
+          <iframe
+            src="/twine/Therapy-Simulation.html"
+            className="w-full h-full border-0"
+            title="Therapy Simulation"
           />
         </div>
       )}

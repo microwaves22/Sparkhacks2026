@@ -632,6 +632,10 @@
     z-index: 50;
   }
 
+  .z-\[60\] {
+    z-index: 60;
+  }
+
   .z-\[100\] {
     z-index: 100;
   }
@@ -726,6 +730,10 @@
 
   .h-\[110vh\] {
     height: 110vh;
+  }
+
+  .h-full {
+    height: 100%;
   }
 
   .w-3 {
@@ -848,6 +856,11 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0;
   }
 
   .bg-\[\#ffd60a\] {
