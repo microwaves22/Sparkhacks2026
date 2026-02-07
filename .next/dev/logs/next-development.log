@@ -1,296 +1,1867 @@
-[00:00:01.541] Server  LOG     ✓ Ready in 1124ms
-[00:00:02.536] Server  ERROR   ⨯ ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+[00:00:02.240] Server  LOG     ✓ Ready in 1573ms
+[00:00:07.479] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:01.456] Server  LOG     ✓ Compiled in 617ms
+[00:01:09.384] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:29.367] Server  LOG     ✓ Compiled in 661ms
+[00:01:32.250] Server  LOG     ✓ Compiled in 306ms
+[00:01:37.579] Server  LOG     ✓ Compiled in 299ms
+[00:01:37.838] Browser ERROR   ./app/components/Hero3D.tsx:170:19
+Parsing ecmascript source code failed
+  168 |       {isStarted && currentZoom === 3 && (
+  169 |         <
+> 170 |           onSelect={(optionIndex) => {
+      |                   ^
+  171 |             console.log("Lens option selected:", optionIndex);
+  172 |             setCurrentZoom((prev) => prev + 1);
+  173 |           }}
+
+Expected '</', got '='
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+[00:01:39.590] Server  LOG     ✓ Compiled in 484ms
+[00:01:43.912] Server  LOG     ✓ Compiled in 406ms
+[00:01:44.024] Browser ERROR   ./app/components/Hero3D.tsx:176:10
+Parsing ecmascript source code failed
+  174 |           onClose={() => setCurrentZoom(2)}
+  175 |         />
+> 176 |         />
+      |          ^
+  177 |       )}
+  178 |
+  179 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+[00:01:51.049] Server  LOG     ✓ Compiled in 449ms
+[00:01:58.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:02.418] Browser LOG     Gear option selected: 3
+[00:02:04.460] Browser LOG     Lens option selected: 1
+[00:02:05.937] Browser LOG     Career option selected: 1
+[00:02:14.347] Server  LOG     ✓ Compiled in 256ms
+[00:03:36.802] Server  LOG     ✓ Compiled in 40ms
+[00:03:41.570] Server  LOG     ✓ Compiled in 47ms
+[00:03:41.686] Browser ERROR   ./app/components/Hero3D.tsx:176:43
+Parsing ecmascript source code failed
+  174 |         />
+  175 |       )}
+> 176 |       {isStarted && currentZoom === 4 && (}
+      |                                           ^
+  177 |
+  178 |       {/* NAV INSTRUCTIONS */}
+  179 |       {isStarted && currentZoom < zoomPoints.length - 1 && currentZoom !== 1 && (
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+[00:03:49.889] Browser ERROR   ./app/components/Hero3D.tsx:177:9
+Parsing ecmascript source code failed
+  175 |       )}
+  176 |       {isStarted && currentZoom === 4 && (
+> 177 |         }
+      |         ^
+  178 |
+  179 |       {/* NAV INSTRUCTIONS */}
+  180 |       {isStarted && currentZoom < zoomPoints.length - 1 && currentZoom !== 1 && (
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+[00:03:51.896] Server  LOG     ✓ Compiled in 49ms
+[00:03:52.005] Browser ERROR   ./app/components/Hero3D.tsx:177:9
+Parsing ecmascript source code failed
+  175 |       )}
+  176 |       {isStarted && currentZoom === 4 && (
+> 177 |         <}
+      |         ^
+  178 |
+  179 |       {/* NAV INSTRUCTIONS */}
+  180 |       {isStarted && currentZoom < zoomPoints.length - 1 && currentZoom !== 1 && (
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+[00:03:55.416] Browser ERROR   ./app/components/Hero3D.tsx:177:9
+Parsing ecmascript source code failed
+  175 |       )}
+  176 |       {isStarted && currentZoom === 4 && (
+> 177 |         <}
+      |         ^
+  178 |
+  179 |       {/* NAV INSTRUCTIONS */}
+  180 |       {isStarted && currentZoom < zoomPoints.length - 1 && currentZoom !== 1 && (
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+[00:03:59.502] Server  LOG     ✓ Compiled in 43ms
+[00:03:59.613] Browser ERROR   ./app/components/Hero3D.tsx:178:20
+Parsing ecmascript source code failed
+  176 |       )}
+  177 |       {isStarted && currentZoom === 4 && (
+> 178 |         <ReadyScene}
+      |                    ^
+  179 |
+  180 |       {/* NAV INSTRUCTIONS */}
+  181 |       {isStarted && currentZoom < zoomPoints.length - 1 && currentZoom !== 1 && (
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+[00:04:03.824] Server  LOG     ✓ Compiled in 54ms
+[00:04:03.935] Browser ERROR   ./app/components/Hero3D.tsx:180:7
+Parsing ecmascript source code failed
+  178 |         <ReadyScene onComplete={() => setCurrentZoom(0)} />
+  179 |
+> 180 |       {/* NAV INSTRUCTIONS */}
+      |       ^
+  181 |       {isStarted && currentZoom < zoomPoints.length - 1 && currentZoom !== 1 && (
+  182 |         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-black/40 text-xs font-bold tracking-widest uppercase animate-bounce z-30">
+  183 |           Click anywhere to advance
+
+Expected '</', got '{'
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+[00:04:24.150] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:28.644] Browser LOG     Gear option selected: 3
+[00:04:30.309] Browser LOG     Lens option selected: 2
+[00:04:32.035] Browser LOG     Career option selected: 1
+[00:04:39.664] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:53.318] Server  LOG     ✓ Compiled in 570ms
+[00:06:05.608] Server  LOG     ✓ Compiled in 587ms
+[00:06:05.949] Browser ERROR   ./app/components/Interaction.tsx:119:3
+Parsing ecmascript source code failed
+  117 |   const currentItem = dialogueData[currentIndex] || null;
+  118 |
+> 119 |   return (
+      |   ^^^^^^^^
+> 120 |     <div
+      | ^^^^^^^^
+> 121 |       style={{
+      | ^^^^^^^^
+> 122 |         maxWidth: "600px",
+      | ^^^^^^^^
+> 123 |         margin: "50px auto",
+      | ^^^^^^^^
+> 124 |         padding: "20px",
+      | ^^^^^^^^
+> 125 |         fontFamily: "sans-serif",
+      | ^^^^^^^^
+> 126 |         border: "2px solid #ccc",
+      | ^^^^^^^^
+> 127 |         borderRadius: "10px",
+      | ^^^^^^^^
+> 128 |         backgroundColor: "#f0f0f0",
+      | ^^^^^^^^
+> 129 |       }}
+      | ^^^^^^^^
+> 130 |     >
+      | ^^^^^^^^
+> 131 |       <p style={{ minHeight: "60px", fontSize: "18px" }}>{displayedText}</p>
+      | ^^^^^^^^
+> 132 |
+      | ^^^^^^^^
+> 133 |       {/* Display options if current item has them */}
+      | ^^^^^^^^
+> 134 |       {currentItem?.options && !isTyping && (
+      | ^^^^^^^^
+> 135 |         <div style={{ marginTop: "10px" }}>
+      | ^^^^^^^^
+> 136 |           {currentItem.options.map((opt, idx) => (
+      | ^^^^^^^^
+> 137 |             <button
+      | ^^^^^^^^
+> 138 |               key={idx}
+      | ^^^^^^^^
+> 139 |               onClick={() => handleNext(opt)}
+      | ^^^^^^^^
+> 140 |               style={{
+      | ^^^^^^^^
+> 141 |                 display: "block",
+      | ^^^^^^^^
+> 142 |                 margin: "5px 0",
+      | ^^^^^^^^
+> 143 |                 padding: "10px",
+      | ^^^^^^^^
+> 144 |                 fontSize: "16px",
+      | ^^^^^^^^
+> 145 |                 cursor: "pointer",
+      | ^^^^^^^^
+> 146 |               }}
+      | ^^^^^^^^
+> 147 |             >
+      | ^^^^^^^^
+> 148 |               {opt}
+      | ^^^^^^^^
+> 149 |             </button>
+      | ^^^^^^^^
+> 150 |           ))}
+      | ^^^^^^^^
+> 151 |         </div>
+      | ^^^^^^^^
+> 152 |       )}
+      | ^^^^^^^^
+> 153 |
+      | ^^^^^^^^
+> 154 |       {/* Next button if no options */}
+      | ^^^^^^^^
+> 155 |       {!currentItem?.options && !isTyping && currentIndex < dialogueData.length && (
+      | ^^^^^^^^
+> 156 |         <button
+      | ^^^^^^^^
+> 157 |           onClick={() => handleNext()}
+      | ^^^^^^^^
+> 158 |           style={{ padding: "10px 20px", fontSize: "16px", cursor: "pointer" }}
+      | ^^^^^^^^
+> 159 |         >
+      | ^^^^^^^^
+> 160 |           Next
+      | ^^^^^^^^
+> 161 |         </button>
+      | ^^^^^^^^
+> 162 |       )}
+      | ^^^^^^^^
+> 163 |     </div>
+      | ^^^^^^^^
+> 164 |   );
+      | ^^^^^
+  165 | }
+
+Return statement is not allowed here
+
+Import trace:
+  Server Component:
+    ./app/components/Interaction.tsx
+    ./app/page.tsx
+[00:06:07.250] Browser ERROR   ./app/components/Interaction.tsx:119:3
+Parsing ecmascript source code failed
+  117 |   const currentItem = dialogueData[currentIndex] || null;
+  118 |
+> 119 |   return (
+      |   ^^^^^^^^
+> 120 |     <div
+      | ^^^^^^^^
+> 121 |       style={{
+      | ^^^^^^^^
+> 122 |         maxWidth: "600px",
+      | ^^^^^^^^
+> 123 |         margin: "50px auto",
+      | ^^^^^^^^
+> 124 |         padding: "20px",
+      | ^^^^^^^^
+> 125 |         fontFamily: "sans-serif",
+      | ^^^^^^^^
+> 126 |         border: "2px solid #ccc",
+      | ^^^^^^^^
+> 127 |         borderRadius: "10px",
+      | ^^^^^^^^
+> 128 |         backgroundColor: "#f0f0f0",
+      | ^^^^^^^^
+> 129 |       }}
+      | ^^^^^^^^
+> 130 |     >
+      | ^^^^^^^^
+> 131 |       <p style={{ minHeight: "60px", fontSize: "18px" }}>{displayedText}</p>
+      | ^^^^^^^^
+> 132 |
+      | ^^^^^^^^
+> 133 |       {/* Display options if current item has them */}
+      | ^^^^^^^^
+> 134 |       {currentItem?.options && !isTyping && (
+      | ^^^^^^^^
+> 135 |         <div style={{ marginTop: "10px" }}>
+      | ^^^^^^^^
+> 136 |           {currentItem.options.map((opt, idx) => (
+      | ^^^^^^^^
+> 137 |             <button
+      | ^^^^^^^^
+> 138 |               key={idx}
+      | ^^^^^^^^
+> 139 |               onClick={() => handleNext(opt)}
+      | ^^^^^^^^
+> 140 |               style={{
+      | ^^^^^^^^
+> 141 |                 display: "block",
+      | ^^^^^^^^
+> 142 |                 margin: "5px 0",
+      | ^^^^^^^^
+> 143 |                 padding: "10px",
+      | ^^^^^^^^
+> 144 |                 fontSize: "16px",
+      | ^^^^^^^^
+> 145 |                 cursor: "pointer",
+      | ^^^^^^^^
+> 146 |               }}
+      | ^^^^^^^^
+> 147 |             >
+      | ^^^^^^^^
+> 148 |               {opt}
+      | ^^^^^^^^
+> 149 |             </button>
+      | ^^^^^^^^
+> 150 |           ))}
+      | ^^^^^^^^
+> 151 |         </div>
+      | ^^^^^^^^
+> 152 |       )}
+      | ^^^^^^^^
+> 153 |
+      | ^^^^^^^^
+> 154 |       {/* Next button if no options */}
+      | ^^^^^^^^
+> 155 |       {!currentItem?.options && !isTyping && currentIndex < dialogueData.length && (
+      | ^^^^^^^^
+> 156 |         <button
+      | ^^^^^^^^
+> 157 |           onClick={() => handleNext()}
+      | ^^^^^^^^
+> 158 |           style={{ padding: "10px 20px", fontSize: "16px", cursor: "pointer" }}
+      | ^^^^^^^^
+> 159 |         >
+      | ^^^^^^^^
+> 160 |           Next
+      | ^^^^^^^^
+> 161 |         </button>
+      | ^^^^^^^^
+> 162 |       )}
+      | ^^^^^^^^
+> 163 |     </div>
+      | ^^^^^^^^
+> 164 |   );
+      | ^^^^^
+  165 | }
+
+Return statement is not allowed here
+
+Import trace:
+  Server Component:
+    ./app/components/Interaction.tsx
+    ./app/page.tsx
+[00:06:27.192] Server  LOG     ✓ Compiled in 1037ms
+[00:06:34.082] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:06:34.697] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:34.930] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Page`.
+[00:07:02.069] Server  LOG     ✓ Compiled in 118ms
+[00:07:02.265] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:05.001] Browser ERROR   ./app/page.tsx:14:5
+Parsing ecmascript source code failed
+  12 |       </div> */}
+  13 |       <
+> 14 |     </main>
+     |     ^
+  15 |   );
+  16 | }
+
+Expression expected
+[00:07:05.001] Browser ERROR   ./app/page.tsx:14:6
+Parsing ecmascript source code failed
+  12 |       </div> */}
+  13 |       <
+> 14 |     </main>
+     |      ^^^^^^
+  15 |   );
+  16 | }
+
+Unterminated regexp literal
+[00:07:06.129] Server  LOG     ✓ Compiled in 538ms
+[00:07:07.729] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Page`.
+[00:07:08.302] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[00:07:40.537] Server  ERROR   ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:07:40.695] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:41.543] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `Page`.
+[00:07:44.193] Server  LOG     ✓ Compiled in 142ms
+[00:07:44.198] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:44.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:53.829] Browser LOG     Gear option selected: 3
+[00:07:55.355] Browser LOG     Lens option selected: 2
+[00:07:57.399] Browser LOG     Career option selected: 1
+[00:09:17.850] Server  LOG     ✓ Compiled in 59ms
+[00:09:20.212] Server  LOG     ✓ Compiled in 44ms
+[00:09:25.488] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:28.338] Browser LOG     Gear option selected: 3
+[00:09:29.501] Browser LOG     Lens option selected: 1
+[00:09:30.869] Browser LOG     Career option selected: 1
+[00:10:06.317] Server  LOG     ✓ Compiled in 51ms
+[00:10:12.221] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:16.614] Browser LOG     Gear option selected: 3
+[00:10:18.270] Browser LOG     Lens option selected: 2
+[00:10:20.088] Browser LOG     Career option selected: 1
+[00:10:55.751] Server  LOG     ✓ Compiled in 50ms
+[00:10:57.886] Server  LOG     ✓ Compiled in 44ms
+[00:11:00.093] Server  LOG     ✓ Compiled in 56ms
+[00:11:04.134] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:07.928] Browser LOG     Gear option selected: 3
+[00:11:09.212] Browser LOG     Lens option selected: 2
+[00:11:10.834] Browser LOG     Career option selected: 1
+[00:11:27.701] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:15.415] Server  LOG     ✓ Compiled in 72ms
+[00:12:20.888] Browser LOG     Gear option selected: 3
+[00:12:22.940] Browser LOG     Lens option selected: 1
+[00:12:26.915] Browser LOG     Career option selected: 1
+[00:12:35.834] Server  LOG     ✓ Compiled in 262ms
+[00:12:38.683] Server  LOG     ✓ Compiled in 404ms
+[00:12:43.219] Server  LOG     ✓ Compiled in 205ms
+[00:12:56.890] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
 
 
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:03.093] Browser ERROR   uncaughtError: Error: ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+[00:12:56.912] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
 
 
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:04.126] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
-
-Import trace:
-  Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:04.126] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
-
-Import trace:
-  Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:07.134] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
-
-Import trace:
-  Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:07.134] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
-
-Import trace:
-  Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:00:08.125] Server  ERROR   ⨯ ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+[00:12:56.949] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
 
 
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:08.507] Browser ERROR   uncaughtError: Error: ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+[00:12:56.961] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
 
 
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:00:09.129] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+[00:12:56.987] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:09.130] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+
+
+[00:12:57.015] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:09.130] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+
+
+[00:12:57.027] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:09.131] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+
+
+[00:12:57.037] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:11.657] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+
+
+[00:12:57.064] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:12.136] Browser ERROR   ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx:6:1
-Module not found: Can't resolve '@react-sprning/three'
-  4 | import { Canvas, useThree, useFrame } from "@react-three/fiber";
-  5 | import { Center, Environment, Html, useGLTF } from "@react-three/drei";
-> 6 | import { useSpring } from "@react-sprning/three";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import GearQuestion from "./GearQuestion"; // Gear interaction component
-  8 |
-  9 | // Camera model
+
+
+[00:12:57.083] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
 
 Import trace:
   Server Component:
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/components/Hero3D.tsx
-    ./OneDrive/Desktop/Programs/Sparkhacks2026/app/page.tsx
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
 
 https://nextjs.org/docs/messages/module-not-found
-[00:00:24.120] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:24.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:25.130] Browser LOG     Autoplay blocked. Click to start music.
-[00:00:25.132] Browser LOG     Autoplay blocked. Click to start music.
-[00:00:31.537] Browser WARN    THREE.WebGLProgram: Program Info Log: (221,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision
-(220,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision
-(221,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision
-(220,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision
-(221,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision
-(207,10-67): warning X4008: floating point division by zero
-(207,10-67): warning X4008: floating point division by zero
-(207,10-67): warning X4008: floating point division by zero
 
 
- 
-[00:00:35.723] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. cylinderGeometry
-[00:00:35.723] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. cylinderGeometry
-[00:00:35.723] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. meshStandardMaterial
-[00:00:35.723] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. meshStandardMaterial
-[00:00:35.723] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. mesh
-[00:04:49.515] Server  LOG     ✓ Compiled in 151ms
-[00:04:51.136] Browser LOG     THREE.WebGLRenderer: Context Lost.
-[00:05:45.619] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. cylinderGeometry
-[00:05:45.619] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. cylinderGeometry
-[00:05:45.619] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. meshStandardMaterial
-[00:05:45.619] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. meshStandardMaterial
-[00:05:45.619] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. mesh
-[00:06:19.527] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:20.231] Browser LOG     Autoplay blocked. Click to start music.
-[00:08:55.529] Server  LOG     ✓ Compiled in 56ms
-[00:08:58.972] Server  LOG     ✓ Compiled in 28ms
-[00:09:09.481] Server  LOG     ✓ Compiled in 40ms
-[00:09:10.605] Server  LOG     ✓ Compiled in 34ms
-[00:09:17.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:17.738] Browser LOG     Autoplay blocked. Click to start music.
-[00:09:25.258] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. cylinderGeometry
-[00:09:25.258] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. cylinderGeometry
-[00:09:25.258] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. meshStandardMaterial
-[00:09:25.258] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. meshStandardMaterial
-[00:09:25.258] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. mesh
-[00:09:32.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:33.051] Browser LOG     Autoplay blocked. Click to start music.
-[00:09:53.261] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. cylinderGeometry
-[00:09:53.261] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. cylinderGeometry
-[00:09:53.261] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. meshStandardMaterial
-[00:09:53.261] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. meshStandardMaterial
-[00:09:53.261] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. mesh
-[00:10:05.216] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:05.852] Browser LOG     Autoplay blocked. Click to start music.
-[00:10:14.030] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. cylinderGeometry
-[00:10:14.030] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. cylinderGeometry
-[00:10:14.030] Browser ERROR   <%s /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements. meshStandardMaterial
-[00:10:14.030] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. meshStandardMaterial
-[00:10:14.030] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. mesh
-[00:51:36.498] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[00:12:57.098] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.132] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.169] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.193] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.230] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.252] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.269] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.291] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.314] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.331] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.350] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.367] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.379] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.390] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.406] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.430] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.446] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.487] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.548] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.557] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.586] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.615] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:12:57.632] Server  LOG     ✓ Compiled in 244ms
+[00:12:57.786] Browser ERROR   ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Camera model
+  13 | function CameraGLB() {
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:13:05.103] Server  LOG     ✓ Compiled in 258ms
+[00:13:09.873] Server  LOG     ✓ Compiled in 214ms
+[00:13:18.544] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:22.793] Browser LOG     Gear option selected: 3
+[00:13:25.077] Browser LOG     Lens option selected: 1
+[00:13:33.529] Browser LOG     Career option selected: 1
+[00:14:37.332] Server  LOG     ✓ Compiled in 83ms
+[00:14:51.732] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:57.406] Browser LOG     Gear option selected: 3
+[00:15:02.110] Browser LOG     Lens option selected: 2
+[00:15:54.359] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.364] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.374] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.381] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.387] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.390] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.395] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.399] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.404] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.413] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.418] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.421] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.428] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.432] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.435] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.438] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.443] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.447] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.454] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.459] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.470] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.476] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.481] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.486] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.494] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.498] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.503] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.507] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.513] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.517] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.522] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.529] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.535] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.539] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.547] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.552] Server  ERROR   ⨯ ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:15:54.557] Server  LOG     ✓ Compiled in 249ms
+[00:15:54.676] Browser ERROR   ./app/components/Hero3D.tsx:10:1
+Module not found: Can't resolve './ReadyScene'
+   8 | import LensQuestion from "./LensQuestion";
+   9 | import CareerSphere from "./CareerSphere";
+> 10 | import ReadyScene from "./ReadyScene";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function CameraGLB() {
+  13 |   const gltf = useGLTF("/models/camera.glb");
+
+Import trace:
+  Server Component:
+    ./app/components/Hero3D.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:16:06.058] Server  LOG     ✓ Compiled in 914ms
+[00:16:10.212] Server  LOG     ✓ Compiled in 248ms
+[00:16:17.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:21.765] Server  LOG     ✓ Compiled in 99ms
+[00:17:37.977] Server  LOG     ✓ Compiled in 1032ms
+[00:17:47.631] Server  LOG     ✓ Compiled in 1303ms
+[00:17:53.933] Server  LOG     ✓ Compiled in 930ms
+[00:18:01.573] Server  LOG     ✓ Compiled in 844ms
+[00:18:06.621] Server  WARN    ⚠ "Failed to reload dynamic routes:" Error: EBUSY: resource busy or locked, open 'C:\Users\yemic\OneDrive\Documents\GitHub\Sparkhacks2026\Sparkhacks2026\.next\dev\types\routes.d.ts'
+[00:18:06.646] Server  LOG     ✓ Compiled in 749ms
+[00:18:07.568] Server  LOG     ✓ Compiled in 322ms
+[00:18:12.261] Server  LOG     ✓ Compiled in 623ms
+[00:18:19.947] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:01.683] Server  LOG     ✓ Compiled in 62ms
+[00:19:03.531] Server  LOG     ✓ Compiled in 42ms
+[00:20:14.629] Server  LOG     ✓ Compiled in 42ms
+[00:20:30.690] Server  LOG     ✓ Compiled in 605ms
+[00:20:37.608] Server  LOG     ✓ Compiled in 525ms
+[00:20:39.921] Server  LOG     ✓ Compiled in 503ms
+[00:20:46.057] Server  LOG     ✓ Compiled in 508ms
+[00:20:51.427] Server  LOG     ✓ Compiled in 326ms
+[00:20:55.897] Server  LOG     ✓ Compiled in 395ms
+[00:21:01.202] Server  LOG     ✓ Compiled in 376ms
+[00:21:07.628] Server  LOG     ✓ Compiled in 162ms
+[00:21:09.834] Server  LOG     ✓ Compiled in 888ms
+[00:21:14.128] Server  LOG     ✓ Compiled in 208ms
+[00:21:19.195] Server  LOG     ✓ Compiled in 618ms
+[00:21:31.454] Server  LOG     ✓ Compiled in 830ms
+[00:21:37.375] Server  LOG     ✓ Compiled in 656ms
+[00:21:50.052] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

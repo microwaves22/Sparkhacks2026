@@ -7,9 +7,10 @@ export default function Page() {
       <Hero3D />
 
       {/* Interactive dialogue */}
-      <div className="py-20">
+      {/* <div className="py-20">
         <Interaction />
-      </div>
+      </div> */}
+      <Interaction />
     </main>
   );
 }
