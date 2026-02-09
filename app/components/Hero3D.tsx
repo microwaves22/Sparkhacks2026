@@ -168,13 +168,21 @@ export default function Hero3D() {
         </div>
       )}
 
-      {isStarted && currentZoom === 3 && (
+      {/* {isStarted && currentZoom === 3 && (
         <div className="absolute inset-0 z-40 pointer-events-auto flex items-center justify-center">
           <CareerSphere
             onSelect={() => setCurrentZoom((prev) => prev + 1)}
             onClose={() => setCurrentZoom((prev) => prev - 1)}
           />
         </div>
+      )} */}
+      {isStarted && currentZoom === 3 && (
+        <CareerSphere
+          onSelect={(index) => {
+            setCurrentZoom((prev) => prev + 1);
+          }}
+          onClose={() => setCurrentZoom((prev) => prev - 1)}
+        />
       )}
 
       {isStarted && currentZoom === 4 && (
